@@ -1,6 +1,5 @@
 // import './App.css';
 import { useState } from "react";
-// Build a React App that lets us play tic-tac-toe
 
 export default function App() {
   const [shown, setShown] = useState("X");
