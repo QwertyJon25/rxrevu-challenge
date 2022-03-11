@@ -16,11 +16,11 @@ export default function App() {
     } else {
       setShown("X");
     }
-    getWinningState(newGrid);
+    getAnswerState(newGrid);
   };
 
-  const getWinningState = (newGrid) => {
-    const winningStates = [
+  const getAnswerState = (newGrid) => {
+    const answerStates = [
       [0, 1, 2],
       [3, 4, 5],
       [6, 7, 8],
@@ -31,7 +31,7 @@ export default function App() {
       [2, 4, 6]
     ];
 
-    winningStates.forEach((s) => {
+    answerStates.forEach((s) => {
       if (
         newGrid[s[0]] !== "" &&
         newGrid[s[0]] === newGrid[s[1]] &&
