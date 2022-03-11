@@ -19,6 +19,8 @@ export default function App() {
     getAnswerState(newGrid);
   };
 
+  // if space is clickHandler, increment answer by one
+
   const getAnswerState = (newGrid) => {
     const answerStates = [
       [0, 1, 2],
