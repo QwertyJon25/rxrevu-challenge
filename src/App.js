@@ -3,13 +3,13 @@ import { useState } from "react";
 
 export default function App() {
   const [shown, setShown] = useState("X");
-  const [game, setGame] = useState(["", "", "", "", "", "", "", "", ""]);
-  const [win, setWin] = useState();
+  const [grid, setGrid] = useState(["", "", "", "", "", "", "", "", ""]);
+  const [answer, setAnswer] = useState();
 
   const clickHandler = (index) => {
-    const newGame = [...game];
-    newGame[index] = shown;
-    setGame(newGame);
+    const newGrid = [...grid];
+    newGrid[index] = shown;
+    setGrid(newGrid);
 
     if (shown === "X") {
       setShown("O");
